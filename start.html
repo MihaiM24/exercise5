@@ -15,5 +15,43 @@
     </style>
   </head>
 
-  <body></body>
+  <body>
+    <form>
+      <label for="mail">Your email:</label>
+      <input type="email" name="mail" id="mail" placeholder="johndoe@gmail.com">
+      <label for="pw">Your password:</label>
+      <input type="password" name="pw" id="pw" placeholder="Never share your password!">
+      <label for="name">Name: </label>
+      <input type="text" name="name" id="name" placeholder="John">
+      <label for="lastname">Lastname: </label>
+      <input type="text" name="lastname" id="lastname" placeholder="Doe">
+      <label for="birthdate">Your date of birth:</label>
+      <input type="date" name="birthdate" id="birthdate">
+      <label for="telnumber">Your telephone number:</label>
+      <input type="tel" name="telnumber" id="telnumber" required pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" placeholder="0732-123-456">
+      <label for="plan">Choose your plan below:</label>
+      <select name="plan" id="plan">
+        <option value="free">Free  $0</option>
+        <option value="free">Silver  $3</option>
+        <option value="free">Gold  $5</option>
+        <option value="free">Platinum  $10</option>
+      </select>
+      <label for="plan2">Pro plan</label>
+      <input type="checkbox" name="plan2" id="plan2">
+      <label for="cc">Your credit card number:</label>
+      <input type="text" name="cc" id="cc" required pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" placeholder="0000-1111-2222-3333">
+      <label for="cvc">CVC:</label>
+      <input type="text" name="cvc" id="cvc" required pattern="[0-9]{3}">
+      <label for="exp">Expiration date:</label>
+      <input type="text" name="exp" id="exp" required pattern="[0-9]{2}/[0-9]{2}" placeholder="e.g 12/24">
+      <label for="address">Billing address:</label>
+      <input type="text" name="address" id="address">
+
+
+  
+
+    </form>
+
+
+  </body>
 </html>
